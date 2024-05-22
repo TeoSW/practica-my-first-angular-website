@@ -1,0 +1,173 @@
+header {
+    margin-bottom:25px;
+    color: #050e2e;
+    padding: 8px;
+    font-weight: lighter;
+  }
+  
+  #headerBar{
+    display: flex;
+    align-items: center;
+    margin-top: 0.76cm;
+  }
+
+  #mainLogo{
+    position: absolute;
+    right:1.1cm;
+    width: 5%;
+  }
+
+  #mainLogo:hover{
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+
+  #booking{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    color: #6d0707;
+  }
+
+  h2{
+    font-size: 55px;
+    margin-top:  -20px;
+  }
+
+  #time{
+    margin-bottom: 50px;
+  }
+  
+  .btn {
+    height: 50px;
+    color: white;
+    background: #6d0707;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 150px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    font-family: "Platypi", serif;
+    transition: width 1.5s ease, border-radius 2s ease;
+  }
+  
+  .btn.clicked {
+    font-size: 0.000001px;
+    width: 50px;
+    border-radius: 50px;
+  }
+
+  .btn:hover{
+    background:#a41212;
+    transition: 0.6s;
+  }
+  
+  .icon { 
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    cursor: pointer;
+    opacity: 0;
+    color:#6d0707;
+  }
+  
+  .icon.done {
+    color: whitesmoke;
+    transition:1s ease-in;
+    opacity: 1;
+    transform: translate(-50%,-780%);
+    
+  }
+  
+  .wrapper{
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #placeholder{
+    background-color: pink;
+  }
+
+  h3{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+  margin: 20px auto;
+  display: block;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  margin-top: -7px;
+  font-size: 12px;
+}
+
+input{
+  border-radius: 200px;
+  border:2px solid #6d0707;
+  text-align: center;
+  color: #6d0707;
+}
+
+input:hover{
+  transition: 2s;
+  border: 2px solid #867a7a;
+  background-color: rgb(241, 235, 235);
+}
+
+#time-err{
+  margin-top: -35px;
+}
+
+body{
+  position: relative;
+  height: 120%;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+  opacity:0;
+}
+
+input[type="datetime-local"]{
+  font-weight: 999;
+  background-image: url("/assets/calendar.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 98%;
+  color: #6d0707;
+}
+
+input[type="datetime-local"]{
+  padding: 2px 8px;
+}
+
+input[type="number"]{
+  width: 20px;
+  padding: 2px 8px;
+}
+
+input[type="text"]{
+  width: 100px;
+  padding: 2px 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin:0;
+}

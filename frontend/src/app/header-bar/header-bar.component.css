@@ -1,0 +1,68 @@
+header {
+    margin-bottom:25px;
+    color: #050e2e;
+    padding: 8px;
+    font-weight: lighter;
+  }
+  
+  #headerBar{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  li {
+    display: inline;
+    list-style: none;
+    padding: 0px 6px;
+  }
+  
+  #mainLogo{
+    height: 7%;
+    width: 5%;
+    margin-left: 40px;
+    margin-right: 0px;
+  }
+  
+  #instaLogo{
+    width: 3vw;
+    margin-right: 8px;
+    transition: filter 0.8s;
+  }
+  
+  #facebookLogo{
+    width: 3vw;
+    margin-right: 8px;
+    transition: filter 0.8s;
+  }
+  
+  #ytLogo{
+    width: 3vw;
+    margin-right: 8px;
+    transition: filter 0.8s;
+  }
+  
+  #xLogo{
+    width: 3vw;
+    margin-right: 8px;
+    transition: filter 0.8s;
+  }
+  
+  #instaLogo:hover{
+    filter: grayscale(80%);
+  }
+  
+  #facebookLogo:hover{
+    filter: grayscale(80%);
+  }
+  
+  #ytLogo:hover{
+    filter: grayscale(80%);
+  }
+  
+  #xLogo:hover{
+    filter: grayscale(80%);
+  }
+  
+  
+  

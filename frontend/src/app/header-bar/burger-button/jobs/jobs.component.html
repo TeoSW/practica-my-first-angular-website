@@ -1,0 +1,40 @@
+<div class="jobs-page">
+    <h1 class="jobs-title">Join Our Team</h1>
+    
+    <div class="job-listings">
+      <div *ngFor="let job of jobListings" class="job-listing">
+        <h2 class="job-title">{{ job.title }}</h2>
+        <p class="job-description">{{ job.description }}</p>
+      </div>
+    </div>
+  
+    <div class="application-form">
+      <h2>Apply Now</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="position">Position</label>
+          <select id="position" class="form-control" required>
+            <option *ngFor="let job of jobListings" [value]="job.title">{{ job.title }}</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Cover Letter</label>
+          <textarea id="message" class="form-control" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button">Submit Application</button>
+      </form>
+    </div>
+  </div>
+  

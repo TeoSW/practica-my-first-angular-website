@@ -1,0 +1,23 @@
+/* thank-you.component.css */
+
+.thank-you-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .thank-you-message {
+    font-size: 24px;
+    color: #6d0707;
+  }
+  
+  .thank-you-message em {
+    font-style: italic;
+  }
+  
+  .thank-you-image {
+    width: 20%;
+    display: block; 
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  

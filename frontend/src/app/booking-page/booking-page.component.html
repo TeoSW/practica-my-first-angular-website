@@ -1,0 +1,47 @@
+<header>
+    <div id="headerBar">
+        <a href="#" routerLink="">
+            <img id="mainLogo" alt="mainlogo" src="../assets/logoRestaurant.jpg">
+        </a>
+    </div>
+</header>
+
+<main>
+    <div id="booking">
+        <h2>Make Your Reservation</h2>
+        <!-- Eirslett -->
+    
+        <form [formGroup]="MyForm" #myForm="ngForm" (ngSubmit)="addClienti()">
+            
+                <h3>Your Name</h3>
+                <input type="text" formControlName="nume_client" [ngClass]="{ 'error': MyForm.get('nume_client')?.invalid && (MyForm.get('nume_client')?.dirty || MyForm.get('nume_client')?.touched) }">
+                <div *ngIf="MyForm.get('nume_client')?.invalid && (MyForm.get('nume_client')?.dirty || MyForm.get('nume_client')?.touched)">
+                    <p class="error-message">Please enter a valid name.</p>
+                </div>
+         
+            
+                <h3>The Number of Guests</h3>
+                <input type="number" formControlName="nr_guests" [ngClass]="{ 'error': MyForm.get('nr_guests')?.invalid && (MyForm.get('nr_guests')?.dirty || MyForm.get('nr_guests')?.touched) }">
+                <div *ngIf="MyForm.get('nr_guests')?.invalid && (MyForm.get('nr_guests')?.dirty || MyForm.get('nr_guests')?.touched)">
+                    <p class="error-message">Please enter a valid number of guests - a maximum of 10 including you</p>
+                </div>
+     
+        
+                <h3>Date & Time</h3>
+                <input type="datetime-local" id="time" min="2024-05-30T00:00" max="2024-12-31T23:59" formControlName="time" [ngClass]="{ 'error': MyForm.get('time')?.invalid && (MyForm.get('time')?.dirty || MyForm.get('time')?.touched) }">
+                <div *ngIf="MyForm.get('time')?.invalid && (MyForm.get('time')?.dirty || MyForm.get('time')?.touched)">
+                    <p class="error-message" id="time-err">Please select a valid date and time.</p>
+                </div>
+        
+            <div class="wrapper">
+                <button id="btn" type="submit" class="btn" (click)="animate(); redirect()" #buttonRef [disabled]="MyForm.invalid">SUBMIT</button>
+            </div>
+        </form>
+        
+        <div #iconRef class="icon">✔</div>
+        
+
+
+    </div>
+</main>
+

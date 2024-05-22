@@ -1,0 +1,15 @@
+<header>
+    <div id="headerBar">
+      <img id="mainLogo" alt="mainlogo" src="../assets/logoRestaurant.jpg">
+      <ul>
+          <li *ngFor="let headerComponent of headerComponents">
+              <a [href] = "headerComponent.link" target=_blank>
+                <img [src]="headerComponent.image" [alt]="headerComponent.name" [id]="headerComponent.id">              
+              </a>
+         </li>
+       </ul>
+
+       <app-burger-button></app-burger-button>
+
+    </div>
+  </header>

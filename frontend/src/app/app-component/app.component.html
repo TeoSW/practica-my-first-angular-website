@@ -1,0 +1,31 @@
+<header *ngIf="isMenuRoute">
+    <div class="menu-header">
+        <ul>
+          <li><a href="#" routerLink="menu/appetizers">Appetizers</a></li>
+          <li><a href="#" routerLink="menu/sushi">Sushi Rolls</a></li>
+          <li><a href="#" routerLink="menu/ramen">Ramen</a></li>
+          <li><a href="#" routerLink="menu/meat">Meat Based</a></li>
+          <li><a href="#" routerLink="menu/vegan">Plant Based</a></li>
+          <li><a href="#" routerLink="menu/drinks">Drinks</a></li>
+          <li><a href="#" routerLink="menu/sake">Sake</a></li>
+          <li><a href="#" routerLink="menu/desserts">Desserts</a></li>
+        </ul>
+        <a routerLink="">
+          <img src="./assets/logoCrimson.png">
+        </a>
+      </div>
+</header>
+
+<header *ngIf="isBurgerRoute" id="header-bar">
+  <div class="burger-header">
+    <a routerLink="">
+      <img id="logo-burger" src="./assets/logoCrimson.png">
+    </a>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
+
+
+
+

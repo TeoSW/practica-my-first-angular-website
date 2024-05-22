@@ -1,0 +1,43 @@
+.menu-header {
+    background-color: #6d0707;
+    padding: 10px 0;
+  }
+  
+  .menu-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .menu-header ul li {
+    display: inline;
+  }
+  
+  .menu-header ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  .menu-header ul li a:hover {
+    background-color: #a41212;
+    border-radius: 100px;
+  }
+  
+  img{
+    position: absolute;
+    right:0.1cm;
+    top:-0.17cm;
+    width: 5%;
+  }
+
+  img:hover{
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+
+  #header-bar{
+    border-top: 1.651cm solid #6d0707;
+  }

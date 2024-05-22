@@ -1,0 +1,28 @@
+<div id="main-container">
+    <div>
+        <h1 id="main-title">Bucharest, Romania</h1>
+        <div id="main-body" *ngFor="let mainComponent of mainComponents">
+            <img [src]="mainComponent.image" alt="Main Image">
+            <a [href]="mainComponent.link" target="_blank">{{ mainComponent.header }}</a>
+            <p [innerHTML]="mainComponent.description"></p>
+        </div>
+    </div> 
+</div>
+
+<div id="menu-description">
+    <h2>Authentic Japanese Cuisine</h2>
+    <h4>Discover the soul of Japan in every bite at our cozy eatery.</h4>
+    <h4>From meticulously crafted sushi rolls to flavorful traditional dishes like Teriyaki Chicken and Ramen, our menu is a celebration of authentic Japanese flavors.</h4>
+</div>
+
+<div class="container">
+    <div class="menu">
+        <button routerLink="menu/ramen">Crimson Menu</button>
+    </div>
+</div>
+
+<div id="up-footer">
+    <div id="footer">
+        <img id="bottom-logo" alt="mainlogo" src="../assets/logoCrimson.png">
+    </div>
+</div>
